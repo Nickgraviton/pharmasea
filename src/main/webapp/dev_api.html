@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="style.css">
+
+		<!-- font awesome site -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+	<style> p{text-indent: 0%;} </style>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+			<a class="navbar-brand" href="index.html">
+				PharmaSea
+			</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Για Φαρμακοποιούς
+						</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="pharma_info.html">Πληροφορίες</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Για Εθελοντές
+						</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="vol_info.html">Πληροφορίες</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Για Developers
+						</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="dev_api.html">Προβολή API</a>
+							<a class="dropdown-item" href="dev_info.html">Πληροφορίες</a>
+						</div>
+					</li>
+
+				</ul>
+
+				<!-- Logged in status -->
+
+					<ul class="nav navbar-nav ml-auto" id="user">
+						<script src="login_status.js">
+						</script>
+					</ul>
+
+				<ul class="nav navbar-nav ml-auto">
+					<form class="form-inline my-2 my-lg-0" action="searchresults.html" method="GET">
+						<select class="selectpicker" name="type" data-width="fit">
+							<option value="medicine">Φάρμακο</option>
+							<option value="pharmacy">Φαρμακείο</option>
+						</select>
+
+						<input class="form-control mr-sm-2 ml-auto" name="q" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">🔍</button>
+					</form>
+				</ul>
+			</div>
+		</nav>
+
+				<!-- inserting text -->
+				<div class="w3-container w3-teal">
+  			<h1>API</h1>
+			</div>
+
+			<div class="w3-container">
+  		<p>Στον προγραμματισμό του υπολογιστή, μια διεπαφή προγραμματισμού εφαρμογών (API) είναι ένα σύνολο ορισμών υπορουτίνας
+				, πρωτόκολλα επικοινωνίας και εργαλεία για την οικοδόμηση λογισμικού. Σε γενικές γραμμές, είναι ένα σύνολο σαφώς
+					καθορισμένων μεθόδων επικοινωνίας μεταξύ των διαφόρων συνιστωσών. Ένα καλό API διευκολύνει την ανάπτυξη ενός προγράμματος
+ 					υπολογιστή, παρέχοντας όλα τα δομικά στοιχεία, τα οποία στη συνέχεια συνθέτει ο προγραμματιστής.
+
+				Ένα API μπορεί να είναι για ένα web-based σύστημα, λειτουργικό σύστημα, σύστημα βάσης δεδομένων, υλικό υπολογιστή ή βιβλιοθήκη λογισμικού.
+
+				Μια προδιαγραφή API μπορεί να λάβει πολλές μορφές, αλλά συχνά περιλαμβάνει προδιαγραφές για ρουτίνες, δομές δεδομένων, κλάσεις αντικειμένων, μεταβλητές ή απομακρυσμένες κλήσεις. Τα POSIX, το API των Windows και το ASPI είναι παραδείγματα διαφορετικών μορφών API. Η τεκμηρίωση για το API παρέχεται συνήθως για να διευκολύνει τη χρήση και την εφαρμογή.</p>
+		</div>
+
+
+
+		<div class="w3-container w3-teal">
+		<h2>Εφαρμογή</h2>
+		</div>
+
+		<div class="w3-container">
+		<p>Στο πλαίσο της κατασκευής μιας αποτελεσματικής πλατφόρμας αναζήτησης φαρμάκων αποφασίσαμε να
+				να κάνουμε χρήση API για να παρέχουμε σε σας τους πελάτες μας ένα σύγχρονο και αποδοτικό σύστημα
+				όχι μονο λειτουργικό αλλά και απλό στην χρήση και αισθητικά όμορφο.Επίσης για τους πρόθυμους developers
+				τα API που χρησιμοποιούμε μπορείτε εύκολα να τα δοκιμάσετε αλλά και να τα εμπλουτίσετε καθώς προσφέρονται χωρίς
+ 				πληρωμή απαιτώντας απλώς σεβασμό στα πνευματικά δικαιώματα και λογαριασμό για να λάβετε public key.</p>
+		</div>
+
+
+
+			<div class="w3-container w3-teal">
+			<h3>Χρησιμοποιούμενα API</h3>
+			</div>
+
+			<div class="w3-container">
+
+			<h5><b>RESTful</b></h5>
+			<p>Για την εύκολη αναζήτηση του χρήστη και τα αιτήματα του έχουμε κάνει χρήση του
+				RESTful API μεσω του οποίου ο χρήστης μπορεί να κάνει αιτήματα στην βάση δεδομένων μας για
+				προιόντα και καταστήματα και να λαμβάνει δυναμικά αποτελέσματα.Αυτό κατορθώνεται με endpoints
+				στα οποία γίνονται queries και επιστρέφονται αποτελέσματα.
+			</p>
+			</div>
+
+		 <h5><b>Bing Maps</b></h5>
+			<p>Επίσης για την περιήγηση του χρήστη σε ενσωματωμένο χάρτη έγινε χρήση του Bing Maps API
+			για την αναζήτηση συντεταγμένων απο διευθύνσεις (geocoding) αλλά και για το αντίστροφο
+			(reverse geocoding).Ετσι ο χρήστης μπορεί να βλέπει τα μαγαζιά στον χάρτη και να επιλέγει
+			ανάλογα.
+			</p>
+			</div>
+
+
+
+			<h5><b>mapbox API(leaflet plugin)</b></h5>
+			<p>Για την άντληση δεδομένων τοποθεσίων και τον σχηματισμό  και την ενσωμάτωση χαρτών
+				χρησιμοποιήσαμε το mapbox API και το leaflet plugin της javascript για διαδραστικούς-mobile friendly χάρτες
+				και την δυνατότητα να επεκτείνουμε την ιδέα μας σε κινητές εφαρμογές στο μέλλον
+			</p>
+			</div>
+
+
+
+
+
+		<!-- inserting navbar at bottom -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="nav-brand" href="#">Top</a>
+
+			<div class="right collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link" href="faq.html">FAQ</a>
+					<a class="nav-item nav-link" href="privacypolicy.html">Πολιτική</a>
+					<a class="nav-item nav-link" href="cookies.html">Cookie</a>
+					<a class="nav-item nav-link" href="contact.html">Επικοινωνία</a>
+				</div>
+			</div>
+
+
+			<ul class="nav navbar-nav navbar-right ml-auto">
+				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-facebook"></i></a></li>
+				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-twitter"></i></a></li>
+				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-google-plus"></i></a></li>
+				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-pinterest-p"></i></a></li>
+			</ul>
+		</nav>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+		<!-- BOOTSTRAP-SELECT -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
+
+	</body>
+</html>

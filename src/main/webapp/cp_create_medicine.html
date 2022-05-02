@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="style.css">
+
+		<!-- font awesome site -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+			<a class="navbar-brand" href="index.html">
+				PharmaSea
+			</a>
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<ul class="navbar-nav">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Για Φαρμακοποιούς
+						</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="pharma_info.html">Πληροφορίες</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Για Εθελοντές
+						</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="vol_info.html">Πληροφορίες</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Για Developers
+						</a>
+
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="dev_api.html">Προβολή API</a>
+							<a class="dropdown-item" href="dev_info.html">Πληροφορίες</a>
+						</div>
+					</li>
+
+				</ul>
+
+				<!-- Logged in status -->
+
+					<ul class="nav navbar-nav ml-auto" id="user">
+						<script src="login_status.js">
+						</script>
+
+						<script>
+							if(!login)
+								window.location.replace("unauthorized.html");
+						</script>
+					</ul>
+
+				<ul class="nav navbar-nav ml-auto">
+					<form class="form-inline my-2 my-lg-0" action="searchresults.html" method="GET">
+						<select class="selectpicker" name="type" data-width="fit">
+							<option value="medicine">Φάρμακο</option>
+							<option value="pharmacy">Φαρμακείο</option>
+						</select>
+
+						<input class="form-control mr-sm-2 ml-auto" name="q" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">🔍</button>
+					</form>
+				</ul>
+			</div>
+		</nav>
+
+	  	<script>
+		function setParams()
+		{
+			localStorage.setItem("name", document.getElementById("name").value);
+			localStorage.setItem("description", document.getElementById("description").value);
+			localStorage.setItem("category", document.getElementById("category").value);
+			localStorage.setItem("tags", document.getElementById("tags").value);
+		}
+  		</script>
+
+
+  		<h3>Δημιουργία Φαρμάκου</h3>
+
+  		<style>
+	  		label
+	  		{
+				display:inline-block;
+				width:80px;
+				margin-right:10px;
+				text-align:left;
+			}
+		</style>
+
+  		<form action="cp_create_medicine_confirmation.html" method="POST" onsubmit="setParams()">
+  			<label for="name">Όνομα:</label> 		<input type="text" name="name" id="name" required>		<br />
+  			<label for="desc">Περιγραφή:</label> 	<input type="text" name="desc" id="description" required>	<br />
+  			<label for="category">Κατηγορία:</label> 	<input type="text" name="category" id="category" required>		<br />
+        	<label for="tags">Tags:</label> 		<input type="text" name="tags" id="tags">		<br />
+        	<small>(χωρισμένα με κόμμα (,))</small>			<br />
+
+  			<input type="submit" value="Δημιουργία">
+  		</form>
+		<!-- inserting navbar at bottom -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="nav-brand" href="#">Top</a>
+
+			<div class="right collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link" href="faq.html">FAQ</a>
+					<a class="nav-item nav-link" href="privacypolicy.html">Πολιτική</a>
+					<a class="nav-item nav-link" href="cookies.html">Cookie</a>
+					<a class="nav-item nav-link" href="contact.html">Επικοινωνία</a>
+				</div>
+			</div>
+
+
+			<ul class="nav navbar-nav navbar-right ml-auto">
+				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-facebook"></i></a></li>
+				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-twitter"></i></a></li>
+				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-google-plus"></i></a></li>
+				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-pinterest-p"></i></a></li>
+			</ul>
+		</nav>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+		<!-- BOOTSTRAP-SELECT -->
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
+
+	</body>
+</html>
