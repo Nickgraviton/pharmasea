@@ -1,4 +1,6 @@
 # NTUA Software Engineering Project 2018-2019
+Price observatory webapp where users can add and search for the prices of products (in this case medicine).
+Implemented using Java Spring Boot for the backend and Javascript for the frontend.
 
 ## Git Gud Team
 ### Members
@@ -10,8 +12,6 @@
 - Φιλίνης Νικόλαος
 
 ## Overview
-This repository implements a price tracking website where users can add and search for the prices of products (in this case medicine).
-
 The app has been tested on Arch Linux with the following software versions:
 - Java 11
 - Gradle 7.4.2
