@@ -15,7 +15,7 @@ Implemented using Java Spring Boot for the backend and Javascript for the fronte
 The app has been tested on Arch Linux with the following software versions:
 - Java 11
 - Gradle 7.4.2
-- Spring boot 2.6.7
+- Spring boot 2.6.4
 - Mariadb 10.7.3
 
 To install the necessary dependencies in Arch linux run:
@@ -52,8 +52,7 @@ To run the application we can run the command:
 ```
 This launches the application which is hosted locally and uses the port 8765.
 The API is available using the endpoint `/observatory/api`.
-By hitting the base endpoint `/` aka `https://localhost:8765`
-we can access the frontend of our webapp that loads our `index.html` file.
+To access the frontend of our webapp we can simply access the url `https://localhost:8765`.
 
 ---
 
