@@ -1,5 +1,5 @@
 plugins {
-  id 'org.springframework.boot' version '2.6.7'
+  id 'org.springframework.boot' version '2.6.4'
   id 'io.spring.dependency-management' version '1.0.11.RELEASE'
   id 'java'
   id 'idea'
@@ -55,8 +55,8 @@ dependencies {
 task copyTask(type: Copy) {
   from 'src/main/webapp/'
   into 'build/resources/main/static'
+  shouldRunAfter bootRun
 }
-bootRun.dependsOn copyTask
 
 test {
   systemProperties(System.getProperties())

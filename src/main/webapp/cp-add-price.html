@@ -11,32 +11,38 @@
 
 		<script defer src="js/header.js" type="text/javascript"></script>
 		<script defer src="js/footer.js" type="text/javascript"></script>
-		<script defer src="js/login.js" type="text/javascript"></script>
+		<script defer src="js/add-price.js" type="text/javascript"></script>
 	</head>
-
-	<script type="text/javascript">
-		if (localStorage.getItem("username")) {
-			window.location.replace("cp-home.html");
-		}
-	</script>
 	  
 	<body>
 		<!--Custom header defined in js/header.js-->
 		<header-component></header-component>
 
 		<div class="main-content">
-			<form action="" id="login-form" method="post">
-				<h2 id="login-text">Login</h2>
+			<form action="" id="add-price-form" method="post">
+				<h2 id="price-text">Add price</h2>
 				<div class="form-group">
-					<input type="text" name="username" id="username" class="form-control" placeholder="Username" required="required">
+					<input type="text" name="name" id="name" class="form-control" placeholder="Name" required="required">
 				</div>
 
 				<div class="form-group">
-					<input type="password" name="password" id="password" class="form-control" placeholder="Password" required="required">
+					<select name="pharmacy" id="pharmacy" class="form-control" required="required"></select>
 				</div>
 
 				<div class="form-group">
-					<button id="login-form-submit" type="submit" class="btn btn-primary btn-block">Login</button>
+					<input type="text" name="price" id="price" class="form-control" placeholder="Price" required="required">
+				</div>
+
+				<div class="form-group">
+					<input type="text" name="dateFrom" id="dateFrom" class="form-control" placeholder="Date (from)" required="required">
+				</div>
+
+				<div class="form-group">
+					<input type="text" name="dateTo" id="dateTo" class="form-control" placeholder="Date (to)" required="required">
+				</div>
+
+				<div class="form-group">
+					<button id="add-price-form-submit" type="submit" class="btn btn-primary btn-block">Add price</button>
 				</div>
 				<span id="error-msg"></span>
 			</form>

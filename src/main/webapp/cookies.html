@@ -1,144 +1,56 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>PharmaSea</title>
 
-		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-		<link rel="stylesheet" href="style.css">
-
-		<!-- font awesome site -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script defer src="js/header.js" type="text/javascript"></script>
+		<script defer src="js/footer.js" type="text/javascript"></script>
 	</head>
 
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<!--Custom header defined in js/header.js-->
+		<header-component></header-component>
 
-			<a class="navbar-brand" href="index.html">
-				PharmaSea
-			</a>
-
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<ul class="navbar-nav">
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Για Φαρμακοποιούς
-						</a>
-
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="pharma_info.html">Πληροφορίες</a>
-						</div>
+		<div class="main-content">
+			<h3>Cookies</h3>
+			<hr>
+			<p>
+				Cookies are small files that are sent to and stored in the application you use to browse the internet. Each website usually uses one or more
+				cookies where it stores information that it deems necessary for the best possible functioning of the website.
+				<br>
+				We use cookies of the following categories:
+				<ul>
+					<li>
+						Required
+						<br>
+						The lack of cookies in this category greatly affects the functioning of the website.
+						Without cookies, functions such as logging in as a member to a website, online shopping or payments are not possible.
 					</li>
-
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Για Εθελοντές
-						</a>
-
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="vol_info.html">Πληροφορίες</a>
-						</div>
+					<li>
+						Performance
+						<br>
+						Performance cookies are related to the collection of information about the behaviour of users while they are browsing the website
+						and store anonymous information about usage statistics, performance, etc. Their purpose is to collect information that improves
+						the operation of the website.
 					</li>
-
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Για Developers
-						</a>
-
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="dev_api.html">Προβολή API</a>
-							<a class="dropdown-item" href="dev_info.html">Πληροφορίες</a>
-						</div>
+					<li>
+						DISCLAIMER: We do not use advertising, third-party or misleading cookies for commercial purposes.
 					</li>
-
 				</ul>
-
-				<!-- Logged in status -->
-
-					<ul class="nav navbar-nav ml-auto" id="user">
-						<script src="login_status.js">
-						</script>
-					</ul>
-
-				<ul class="nav navbar-nav ml-auto">
-					<form class="form-inline my-2 my-lg-0" action="searchresults.html" method="GET">
-						<select class="selectpicker" name="type" data-width="fit">
-							<option value="medicine">Φάρμακο</option>
-							<option value="pharmacy">Φαρμακείο</option>
-						</select>
-
-						<input class="form-control mr-sm-2 ml-auto" name="q" type="search" placeholder="Search" aria-label="Search">
-						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">🔍</button>
-					</form>
-				</ul>
-			</div>
-		</nav>
-
-			<div class="w3-container w3-teal">
-	  	<h1>Cookies</h1>
-			</div>
-
-		<div class="w3-container">
-	  <p>Τα cookies είναι μικρά αρχεία που αποστέλλονται και αποθηκεύονται στην εφαρμογή την οποία χρησιμοποιείτε για να πλοηγείστε στο διαδίκτυο. Η κάθε ιστοσελίδα χρησιμοποιεί συνήθως ένα ή περισσότερα cookies όπου και αποθηκεύει πληροφορίες που κρίνει απαραίτητες για την καλύτερη δυνατή λειτουργία της.Χρησιμοποιούμε cookies των εξής κατηγοριών: </p>
-			<br><br>
-
-		 <ul>
-  <li>Υποχρεωτικά-Απαραίτητα <p>Η έλλειψη των cookies αυτής της κατηγορίας επηρεάζει την λειτουργία της ιστοσελίδας σε μεγάλο βαθμό. Χωρίς cookies, λειτουργίες όπως η σύνδεση ως μέλος σε μια ιστοσελίδα, οι ηλεκτρονικές αγορές προϊόντων ή οι online πληρωμές δεν είναι εφικτές. </p>
-	</li>
-
-  <li>Απόδοσης<p>Τα performance cookies σχετίζονται με τη συλλογή πληροφοριών σχετικά με τη συμπεριφορά των χρηστών κατά την πλοήγησή τους στην ιστοσελίδα και αποθηκεύουν ανώνυμη πληροφορία σχετικά με στατιστικά χρήσης, απόδοσης κλπ. Σκοπός τους είναι η συλλογή πληροφοριών οι οποίες βελτιώνουν τη λειτουργία της ιστοσελίδας. </p></li>
-
-  <li>Χρηστικότητας<p>Τα cookies χρηστικότητας αποθηκεύουν στοιχεία χρήσης στο skroutz και στα συνεργαζόμενα καταστήματα τα οποία θα διευκολύνουν την επόμενη επίσκεψη του χρήστη στην ιστοσελίδα. Tα δεδομένα μπορεί να είναι ανώνυμα, ενώ δεν είναι διαθέσιμα κατά την πλοήγηση του χρήστη σε άλλες ιστοσελίδες.</p></li>
-
-	<li>ΠΑΡΑΤΗΡΗΣΗ : Δεν χρησιμοποιούμε cookies διαφημίσεων αλλά και third-party-cookies ,είτε παραπλανητικά cookies για εμπορικούς σκοπούς.</li>
-
-	</ul>
-
+			</p>
 		</div>
 
-		<!-- inserting navbar at bottom -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="nav-brand" href="#">Top</a>
+		<!--Custom header defined in js/footer.js-->
+		<footer-component></footer-component>
 
-			<div class="right collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav">
-					<a class="nav-item nav-link" href="faq.html">FAQ</a>
-					<a class="nav-item nav-link" href="privacypolicy.html">Πολιτική</a>
-					<a class="nav-item nav-link" href="cookies.html">Cookie</a>
-					<a class="nav-item nav-link" href="contact.html">Επικοινωνία</a>
-				</div>
-			</div>
-
-
-			<ul class="nav navbar-nav navbar-right ml-auto">
-				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-facebook"></i></a></li>
-				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-twitter"></i></a></li>
-				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-google-plus"></i></a></li>
-				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-pinterest-p"></i></a></li>
-			</ul>
-		</nav>
-
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
-
-		<!-- BOOTSTRAP-SELECT -->
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
-
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
-
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</body>
 </html>

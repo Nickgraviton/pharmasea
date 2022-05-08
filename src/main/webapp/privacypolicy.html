@@ -1,144 +1,49 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>PharmaSea</title>
 
-		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
-		<link rel="stylesheet" href="style.css">
-
-		<!-- font awesome site -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script defer src="js/header.js" type="text/javascript"></script>
+		<script defer src="js/footer.js" type="text/javascript"></script>
 	</head>
 
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<!--Custom header defined in js/header.js-->
+		<header-component></header-component>
 
-			<a class="navbar-brand" href="index.html">
-				PharmaSea
-			</a>
+		<div class="main-content">
+			<h3>PRIVACY POLICY</h3>
+			<hr>
+			<p>
+				We respect your privacy.If finding success in online business is something you're working on, you're more than aware of how
+				much determination you need to have. Of all the details and nuances that need to be addressed to make a company successful,
+				increasing customer trust should be high on the list. Because the bottom line is, regardless of whether you have the best products in the world,
+				if customers don't trust you, success will not come. A good online privacy policy will make it absolutely clear what information is collected
+				and stored and how the information is used. It will state whether there will be distribution of this information by third parties alongside
+				the choices consumers have in this regard. Even if your site does not collect information, consumers will not know unless it is posted as part of
+				your privacy policy. Doing so will facilitate consumer convenience and increase advertising and online marketing opportunities. There should be a
+				statement about the company's commitment to guarantee online privacy and the steps taken to maintain it. In such a competitive market, doing
+				everything you can to build trust is a vital part of the success of an online business. Online privacy is not just a concern for consumers.
+				If you don't make it a priority in your business plan, you could lose potential sales because visitors don't feel safe giving out the information
+				necessary to process a transaction. Don't let failure to have an online privacy policy stop you and your business from success. As popular as
+				online shopping has become recently, online privacy is still a burning issue for consumers, and anyone who spends time on the Internet is at
+				least aware of the potential pitfalls that can come when personal information gets into the hands of someone with bad intentions. An easily
+				accessible and well thought out online policy communicates to your customers that you respect them and are willing to do what is necessary
+				to keep their information secure. It lets them know that their privacy is as important to you as it is to them.
+			</p>
+		</div>
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+		<!--Custom header defined in js/footer.js-->
+		<footer-component></footer-component>
 
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<ul class="navbar-nav">
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Για Φαρμακοποιούς
-						</a>
-
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="pharma_info.html">Πληροφορίες</a>
-						</div>
-					</li>
-
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Για Εθελοντές
-						</a>
-
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="vol_info.html">Πληροφορίες</a>
-						</div>
-					</li>
-
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Για Developers
-						</a>
-
-						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="dev_api.html">Προβολή API</a>
-							<a class="dropdown-item" href="dev_info.html">Πληροφορίες</a>
-						</div>
-					</li>
-
-				</ul>
-
-				<!-- Logged in status -->
-
-					<ul class="nav navbar-nav ml-auto" id="user">
-						<script src="login_status.js">
-						</script>
-					</ul>
-
-				<ul class="nav navbar-nav ml-auto">
-					<form class="form-inline my-2 my-lg-0" action="searchresults.html" method="GET">
-						<select class="selectpicker" name="type" data-width="fit">
-							<option value="medicine">Φάρμακο</option>
-							<option value="pharmacy">Φαρμακείο</option>
-						</select>
-
-						<input class="form-control mr-sm-2 ml-auto" name="q" type="search" placeholder="Search" aria-label="Search">
-						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">🔍</button>
-					</form>
-				</ul>
-			</div>
-		</nav>
-
-			<div class="w3-container w3-teal">
-			  <h1>Πολιτικη απορρήτου</h1>
-				</div>
-
-				<div class="w3-container">
-		  	<p>Σεβόμαστε τα προσωπικά σας δεδομένα
-					Αν η εύρεση της επιτυχίας στην επιχείρηση στο διαδίκτυο είναι κάτι στο οποίο εργάζεστε,γνωρίζετε πολύ περισσότερο πόση αποφασιστικότητα πρέπει να έχετε. Από όλες τις λεπτομέρειες και τις λεπτομέρειες που θα πρέπει να αντιμετωπιστούν για να καταστεί μια εταιρεία επιτυχής, η αύξηση της εμπιστοσύνης των πελατών θα πρέπει να είναι υψηλή στον κατάλογο. Επειδή η κατώτατη γραμμή είναι, ανεξάρτητα από το αν έχετε τα καλύτερα προϊόντα στον κόσμο, αν οι πελάτες δεν σας εμπιστεύονται, η επιτυχία δεν θα έρθει.
-
-Μια καλή πολιτική απορρήτου στο διαδίκτυο θα καταστήσει απόλυτα σαφές ποιες πληροφορίες συλλέγονται και αποθηκεύονται και πώς χρησιμοποιούνται οι πληροφορίες. Θα δηλώσει εάν θα υπάρξει διανομή των πληροφοριών αυτών από τρίτους παράλληλα με τις επιλογές που έχουν οι καταναλωτές ως προς αυτό. Ακόμη και αν ο ιστότοπός σας δεν συλλέγει πληροφορίες, οι καταναλωτές δεν θα το γνωρίζουν, εκτός εάν δημοσιεύονται ως μέρος της πολιτικής απορρήτου σας. Με τον τρόπο αυτό, θα διευκολυνθεί η επίτευξη της άνεσης των καταναλωτών και θα αυξηθούν οι διαφημιστικές ευκαιρίες και οι ευκαιρίες μάρκετινγκ στο διαδίκτυο. Θα πρέπει να υπάρξει μια δήλωση σχετικά με την αφοσίωση της εταιρείας για να εγγυηθεί το ιδιωτικό απόρρητο στο διαδίκτυο, καθώς και τα μέτρα που έχουν ληφθεί για τη διατήρησή της.
-
-Σε μια τέτοια ανταγωνιστική αγορά, να κάνεις ό, τι μπορείς για να οικοδομήσεις εμπιστοσύνη είναι ένα ζωτικό μέρος της επιτυχίας μιας online επιχείρησης. Η ιδιωτική ζωή στο διαδίκτυο δεν είναι μόνο μια ανησυχία για τους καταναλωτές. Αν δεν το καταστήσετε προτεραιότητα στο επιχειρηματικό σας σχέδιο, θα μπορούσατε να χάσετε πιθανές πωλήσεις, επειδή οι επισκέπτες δεν αισθάνονται ασφαλείς, δίνοντας τις απαραίτητες πληροφορίες για την επεξεργασία μιας συναλλαγής. Μην αφήσετε την αποτυχία να έχετε μια πολιτική απορρήτου στο διαδίκτυο να σταματήσετε εσάς και την επιχείρησή σας από την επιτυχία.
-
-Όπως είναι δημοφιλές όσο οι αγορές στο διαδίκτυο έχουν γίνει πρόσφατα, το ιδιωτικό απόρρητο στο διαδίκτυο εξακολουθεί να είναι ένα φλέωον ζήτημα για τους καταναλωτές και όποιος ξοδεύει χρόνο στο Διαδίκτυο είναι τουλάχιστον ενήμερος για τις πιθανές παγίδες που μπορεί να έρθουν όταν οι προσωπικές πληροφορίες φτάσουν στα χέρια κάποιου με κακές προθέσεις. Μια εύκολα προσβάσιμη και καλά μελετημένη ηλεκτρονική πολιτική επικοινωνεί με τους πελάτες σας ότι τους σέβεστε και είστε πρόθυμοι να κάνετε ό, τι είναι απαραίτητο για να διατηρήσετε τις πληροφορίες τους ασφαλείς. Τους ενημερώνει ότι η ιδιωτική τους ζωή είναι τόσο σημαντική για εσάς όσο και για αυτούς.</p>
-				</p>
-				</div>
-
-
-
-
-
-
-		<!-- inserting navbar at bottom -->
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="nav-brand" href="#">Top</a>
-
-			<div class="right collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav">
-					<a class="nav-item nav-link " href="faq.html">FAQ</a>
-					<a class="nav-item nav-link " href="privacypolicy.html">Πολιτική</a>
-					<a class="nav-item nav-link" href="cookies.html">Cookie</a>
-					<a class="nav-item nav-link" href="contact.html">Επικοινωνία</a>
-				</div>
-			</div>
-
-
-			<ul class="nav navbar-nav navbar-right ml-auto">
-				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-facebook"></i></a></li>
-				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-twitter"></i></a></li>
-				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-google-plus"></i></a></li>
-				<li class="nav-item"><a href="#" class="nav-link"><i class="fa fa-pinterest-p"></i></a></li>
-			</ul>
-		</nav>
-
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-
-
-		<!-- BOOTSTRAP-SELECT -->
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
-
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
-
-		</script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</body>
 </html>

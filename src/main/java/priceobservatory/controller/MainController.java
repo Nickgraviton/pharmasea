@@ -13,6 +13,9 @@ import priceobservatory.json.*;
 import priceobservatory.model.*;
 import priceobservatory.repository.*;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
+import java.nio.charset.StandardCharsets;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
@@ -174,14 +177,14 @@ public class MainController {
 	// returns JSON with products like name
 	@GetMapping(path = "/products/name/{name}", produces = "application/json")
 	String productsLike(@PathVariable String name, @RequestParam Map<String, String> params)
-			throws JsonProcessingException {
+			throws JsonProcessingException, UnsupportedEncodingException {
 
 		Integer start, count;
 		String format, newName, status;
 		start   = (params.get("start")  == null) ? 0         : Integer.valueOf(params.get("start"));
 		count   = (params.get("count")  == null) ? 20        : Integer.valueOf(params.get("count"));
 		status  = (params.get("status") == null) ? "ACTIVE"  : params.get("status");
-		newName = (name                 == null) ? ""        : name;
+		newName = (name                 == null) ? ""        : URLDecoder.decode(name, StandardCharsets.UTF_8.displayName());;
 		format  = (params.get("format") == null) ? "json"    : params.get("format");
 
 		boolean validStart = true, validCount = true, validFormat = true, validStatus;
@@ -452,14 +455,14 @@ public class MainController {
 	// returns JSON with shops like name
 	@GetMapping(path = "/shops/name/{name}", produces = "application/json")
 	String shopsLike(@PathVariable String name, @RequestParam Map<String, String> params)
-			throws JsonProcessingException {
+			throws UnsupportedEncodingException, JsonProcessingException {
 
 		Integer start, count;
 		String format, newName, status;
 		start   = (params.get("start")  == null) ? 0         : Integer.valueOf(params.get("start"));
 		count   = (params.get("count")  == null) ? 20        : Integer.valueOf(params.get("count"));
 		status  = (params.get("status") == null) ? "ACTIVE"  : params.get("status");
-		newName = (name                 == null) ? ""        : name;
+		newName = (name                 == null) ? ""        : URLDecoder.decode(name, StandardCharsets.UTF_8.displayName());
 		format  = (params.get("format") == null) ? "json"    : params.get("format");
 
 		boolean validStart = true, validCount = true, validFormat = true, validStatus;

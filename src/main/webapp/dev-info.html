@@ -11,35 +11,28 @@
 
 		<script defer src="js/header.js" type="text/javascript"></script>
 		<script defer src="js/footer.js" type="text/javascript"></script>
-		<script defer src="js/login.js" type="text/javascript"></script>
 	</head>
 
-	<script type="text/javascript">
-		if (localStorage.getItem("username")) {
-			window.location.replace("cp-home.html");
-		}
-	</script>
-	  
 	<body>
 		<!--Custom header defined in js/header.js-->
 		<header-component></header-component>
 
 		<div class="main-content">
-			<form action="" id="login-form" method="post">
-				<h2 id="login-text">Login</h2>
-				<div class="form-group">
-					<input type="text" name="username" id="username" class="form-control" placeholder="Username" required="required">
-				</div>
-
-				<div class="form-group">
-					<input type="password" name="password" id="password" class="form-control" placeholder="Password" required="required">
-				</div>
-
-				<div class="form-group">
-					<button id="login-form-submit" type="submit" class="btn btn-primary btn-block">Login</button>
-				</div>
-				<span id="error-msg"></span>
-			</form>
+			<h3>FOR DEVELOPERS</h3>
+			<hr>
+			<p>
+				As a developer you can enrich your website or your application with PharmaSea's API. You can contact us via our registered email
+				if you want to help us make the user's experience even better.
+				Whether you work on the front or the back end or are simply a very good designer there is a position for you here.
+				<br>
+				Required skills:
+				<ul>
+					<li>Java, Spring</li>
+					<li>Restful API</li>
+					<li>MySQL</li>
+					<li>Javascript, HTML, CSS</li>
+				</ul>
+			</p>
 		</div>
 
 		<!--Custom header defined in js/footer.js-->
